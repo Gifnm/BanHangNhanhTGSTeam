@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+
+
+    >
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="130dp"
+android:src="@drawable/logopos"
+
+    ></ImageView>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Hey,nhà bán hàng. Chào mừng trở lại!"
+       android:textSize="30sp"
+       android:fontFamily="@font/telex"
+       android:textColor="@color/black"
+       android:layout_marginBottom="10dp"
+       android:padding="15dp"
+
+      ></TextView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Username"
+
+       style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+       >
+<com.google.android.material.textfield.TextInputEditText
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+
+   >
+
+</com.google.android.material.textfield.TextInputEditText>
+   </com.google.android.material.textfield.TextInputLayout>
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Password"
+       app:passwordToggleEnabled="true"
+
+       style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+       >
+      <com.google.android.material.textfield.TextInputEditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+android:inputType="textPassword"
+          android:background="#fff"
+          android:layout_marginBottom="10dp"
+          >
+
+      </com.google.android.material.textfield.TextInputEditText>
+   </com.google.android.material.textfield.TextInputLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:text="Tôi quên mật khẩu."
+    android:layout_gravity="right"
+     android:layout_marginRight="15dp"
+    android:textColor="@color/black"
+    android:layout_marginBottom="10dp"
+    android:gravity="center"
+    ></TextView>
+
+   <Button
+       android:layout_width="125dp"
+       android:layout_height="wrap_content"
+       android:shadowRadius="@integer/material_motion_duration_long_1"
+       android:text="Đăng nhập"
+       android:layout_marginBottom="10dp"
+       android:layout_gravity="center_vertical|center_horizontal"
+       android:background="@color/black"
+       ></Button>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Bạn chưa có tài khoản? Đăng ký ngay."
+       android:textSize="14sp"
+       android:textColor="@color/black"
+       android:gravity="center"
+       ></TextView>
+</LinearLayout>
+    <!-- Include other widget or layout tags here. These are considered
+            "child views" or "children" of the linear layout -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+
+    >
+
+
+</RelativeLayout>
+</LinearLayout>
